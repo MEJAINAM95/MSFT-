@@ -13,8 +13,6 @@ describe('Microsoft Test Suite', function() {
 
     element(by.name('Continue')).click().then(function(){browser.sleep(10000)});
 
-    element(by.xpath("//span[contains(text(),'Asia')])")).click();
-
 
   });
 });
