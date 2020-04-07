@@ -11,7 +11,7 @@ describe('Microsoft Test Suite', function() {
 
     element(by.name('Select your industry')).element(by.css("option[value='fc9868e7db79063f9808']")).click();
 
-    element(by.name('Continue')).click().then(function(){browser.sleep(10000)});
+    element(by.name('Continue')).click().then(function(){browser.sleep(9000)});
 
 
   });
