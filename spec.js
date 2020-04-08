@@ -13,6 +13,15 @@ describe('Microsoft Test Suite', function() {
 
     element(by.name('Continue')).click().then(function(){browser.sleep(9000)});
 
+    element(by.id('mat-radio-2')).click();
 
+    element(by.name('Continue to Next Activity')).click().then(function(){browser.sleep(9000)});
+
+    //element(by.css('.plugin-single__text')).element(by.cssContainingText('.plugin-single__text-title', 'Yes'));
+    //element(by.id('mat-radio-13')).click();
+    //element(by.name('Continue')).click().then(function(){browser.sleep(9000)});
+
+    var dog = element(by.cssContainingText('.plugin-single__text-title', 'Yes'));
+    dog.click();
   });
 });
