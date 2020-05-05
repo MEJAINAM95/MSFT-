@@ -1,0 +1,14 @@
+When('User lands to Season two: Simulation: Round one and clicks on Launch Round one', async function () {
+    await browser.sleep(8000).then(async function(){
+        await productionsanitys2.simLaunch.isDisplayed().then(async function () {
+            await productionsanitys2.simLaunch.click().then(async function () {
+                browser.ignoreSynchronization = true;
+                browser.sleep(12000).then(async function(){
+                    await browser.switchTo().frame(element(By.xpath("//object[@class='isomer-object']")).getWebElement());
+                    //var email = await element(By.xpath("//isma-text-output[contains(text(),'Continue to Simulation')]"));
+                    //await email.click();
+                })
+            })
+        })
+    })
+});
