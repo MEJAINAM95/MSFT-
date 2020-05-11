@@ -15,7 +15,7 @@ describe('Season 1 test suite',function()
         element(by.id('password')).sendKeys('ABab12$');
   
         element(by.name('Login')).click().then(function() { browser.sleep(20000)});
-   /*
+   
         element(by.name('Select your industry')).element(by.css("option[value='fc9868e7db79063f9808']")).click().then(function() {browser.sleep(10000)});
   
         element(by.name('Continue')).click().then(function() { browser.sleep(20000)});
@@ -34,12 +34,18 @@ describe('Season 1 test suite',function()
         //radio button code 
         element(by.id('mat-radio-16')).click().then(function() {browser.sleep(2000)});
         element(by.id('mat-radio-21')).click().then(function() {browser.sleep(2000)});
+        element(by.id('mat-radio-31')).click().then(function() {browser.sleep(3000)}).then(function()
+        { element(by.id('mat-radio-37')).click().then(function() {browser.sleep(3000)});});
+        element(by.id('mat-radio-37')).click().then(function() {browser.sleep(3000)});
+        element(by.id('mat-radio-41')).click().then(function() {browser.sleep(2000)});
+        element(by.id('mat-radio-46')).click().then(function() {browser.sleep(2000)});
+        element(by.id('mat-radio-51')).click().then(function() {browser.sleep(2000)});
         element(by.id('mat-radio-26')).click().then(function() 
         {
             element(by.name('Continue to Next Activity')).click().then(function() { browser.sleep(5000)});
             browser.sleep(10000);
         });
-     */   
+       
         // thank you screen  
         element(by.name('Continue to Next Activity')).click().then(function() 
         {

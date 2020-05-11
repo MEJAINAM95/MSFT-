@@ -3,9 +3,9 @@ exports.config = {
   //directConnect: true,
   framework: 'jasmine',
   seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['Season1r4_demo.js'],
+  specs: ['Season1.js'],
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 600000,
+    defaultTimeoutInterval: 6000000,
     showColors: true,
     includeStackTrace: false,
 },
