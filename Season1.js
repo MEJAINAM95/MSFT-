@@ -31,7 +31,7 @@ describe('Season 1 test suite',function()
             browser.sleep(5000)
         });
 
-        //radio button code 
+        //radio button codes 
         element(by.id('mat-radio-16')).click().then(function() {browser.sleep(2000)});
         element(by.id('mat-radio-21')).click().then(function() {browser.sleep(2000)});
         element(by.id('mat-radio-31')).click().then(function() {browser.sleep(3000)}).then(function()
